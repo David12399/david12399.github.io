@@ -1,0 +1,81 @@
+
+<html> 
+<head>
+  <link type="text/css" rel="stylesheet" href="main.css" />
+  <title> Minecraft </title> 
+  <script>
+    function banner (){
+      var text = confirm("Did You Really Want to Click on My Banner?");
+      return text;
+    } 
+    function answer(){
+      var radio = document.getElementsByName("trivia");
+      var selection = false;
+      var message = "";
+      for( var i = 0; i < "yes" && radio[i].checked == true) {
+        selection = true;
+       }  //end if statement 
+      } // end for loop
+
+      if(selection == true) {
+        message = message + "<b><p style'color:green'> Way to go!</p></b>";
+      } else {
+        message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+      }
+       document.getElementById("response").innerHTML = message;
+
+
+    } //end function answer
+  </script> 
+  <style>
+
+  </style>
+ </head> 
+ <body id="background"> 
+  <a onclick="return banner()" href="http://simplystem.com">
+  <header id="banner"> Hello there</header>
+  </a>
+  <nav>
+   <ul id="navmenu" >
+    <li class="navimenu"> <a href"index.html"> Home </li>
+    <li class="navimenu"> <a href="games.html"> Games </li>
+    <li class="navimenu"> <a href="games.html"> Videos </li>
+  </ul> </nav>  
+ <div class= "rightside" >
+ E
+ </div>
+ <div class="leftside">
+ E
+ </div>
+ <div class="clearfloat"></div>
+  <h1> Survival </h1>
+ 
+  <p class="paragraph">To survive in <u>Mincraft</u> you need to learn a few things. Including how to <b>craft and how to smelt items</b>. As well as when to <span class="wrap-text"> mine and where you should mine </span> so you can get items like <i>iron, gold and diamonds</i>.</p>
+ <div class="wrap-list"> 
+  <ol>
+  	<li class="listitem"> Crafting</li>
+  	<li class="listitem"> Smelting</li>
+  	<li class="listitem"> Mining</li>
+  </ol>
+ </div>
+ <div>
+  <h2> Minecraft Question </h2>
+  <p> What is the rarest ore in the game? </p>
+ </div>
+  <form>
+    <div id="response"> </div>
+    <input type="radio" name="trivia" value="no" > Diamond Ore <br>
+    <input type="radio" name="trivia" value="no" > Iron Ore <br>
+    <input type="radio" name="trivia" value="no" > Gold Ore <br>
+    <input type="radio" name="trivia" value="yes" > Netherite <br>
+    <input onclick="answer()" type="button" value= "Click Here" id="button" > 
+  </form> 
+ 
+  <img width="50%" src="https://thumbs.dreamstime.com/z/minecraft-editorial-vector-illustration-minecraft-editorial-vector-illustration-white-background-136940621.jpg"	/>	
+  <img width="50%" src="https://thumbs.dreamstime.com/z/pixel-art-minecraft-game-cube-texture-banner-background-land-grass-ground-your-projects-earth-square-pixels-152699354.jpg" />
+  
+  <hr />
+  <center> David <a href= "https://simplystem.com/code-dungeon/">My Favorite Website</a> </center>
+   <footer id="footer"> by David Calderon </footer>
+</body> 
+</html>
